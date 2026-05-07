@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "画像・素材・alt検品カート",
+  "version": "0.1.0",
+  "description": "画像・素材・alt検品カート closed alpha extension",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

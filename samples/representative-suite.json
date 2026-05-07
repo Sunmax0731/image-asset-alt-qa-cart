@@ -1,0 +1,108 @@
+[
+  {
+    "id": "happy-path",
+    "description": "必須項目がそろい、警告もない代表成功ケース。",
+    "input": {
+      "items": [
+        {
+          "id": "happy-path",
+          "assetName": "image-asset-alt-qa-cart-assethappy-path",
+          "altText": "公開前確認用の説明テキスト",
+          "usageContext": "公開ページの本文画像",
+          "license": "own-production"
+        }
+      ]
+    },
+    "expected": {
+      "overall": "pass",
+      "counts": {
+        "pass": 1,
+        "warning": 0,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "id": "missing-required",
+    "description": "必須項目が欠落し、失敗として扱うケース。",
+    "input": {
+      "items": [
+        {
+          "id": "missing-required",
+          "altText": "公開前確認用の説明テキスト",
+          "usageContext": "公開ページの本文画像",
+          "license": "own-production"
+        }
+      ]
+    },
+    "expected": {
+      "overall": "fail",
+      "counts": {
+        "pass": 0,
+        "warning": 0,
+        "fail": 1
+      }
+    }
+  },
+  {
+    "id": "warning",
+    "description": "自動判定では進められるが、手動確認を要求するケース。",
+    "input": {
+      "items": [
+        {
+          "id": "warning",
+          "assetName": "image-asset-alt-qa-cart-assetwarning",
+          "altText": "公開前確認用の説明テキスト",
+          "usageContext": "公開ページの本文画像",
+          "license": "own-production",
+          "decorativeAmbiguous": true
+        }
+      ]
+    },
+    "expected": {
+      "overall": "warning",
+      "counts": {
+        "pass": 0,
+        "warning": 1,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "description": "成功、警告、失敗が混在するバッチ検証ケース。",
+    "input": {
+      "items": [
+        {
+          "id": "mixed-pass",
+          "assetName": "image-asset-alt-qa-cart-assetmixed-pass",
+          "altText": "公開前確認用の説明テキスト",
+          "usageContext": "公開ページの本文画像",
+          "license": "own-production"
+        },
+        {
+          "id": "mixed-warning",
+          "assetName": "image-asset-alt-qa-cart-assetmixed-warning",
+          "altText": "公開前確認用の説明テキスト",
+          "usageContext": "公開ページの本文画像",
+          "license": "own-production",
+          "decorativeAmbiguous": true
+        },
+        {
+          "id": "mixed-fail",
+          "assetName": "image-asset-alt-qa-cart-assetmixed-fail",
+          "usageContext": "公開ページの本文画像",
+          "license": "own-production"
+        }
+      ]
+    },
+    "expected": {
+      "overall": "fail",
+      "counts": {
+        "pass": 1,
+        "warning": 1,
+        "fail": 1
+      }
+    }
+  }
+]

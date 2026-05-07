@@ -1,0 +1,19 @@
+{
+  "name": "image-asset-alt-qa-cart",
+  "title": "画像・素材・alt検品カート",
+  "domain": "ChromeExtension",
+  "kind": "chrome-extension",
+  "host": null,
+  "field": "画像alt検品",
+  "audience": "Web制作担当者、アクセシビリティレビュー担当者、素材管理者",
+  "workflow": "ページ上の画像、alt、用途、権利情報を一時カートへ入れ、公開前の不足を検品する。",
+  "requiredFields": [
+    "assetName",
+    "altText",
+    "usageContext",
+    "license"
+  ],
+  "warningField": "decorativeAmbiguous",
+  "warningMessage": "装飾画像か意味画像かの判断が曖昧です。",
+  "qcdsTarget": "A-以上。closed alphaではS-を基準とする。"
+}

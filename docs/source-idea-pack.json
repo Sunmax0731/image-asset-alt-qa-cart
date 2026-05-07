@@ -1,0 +1,32 @@
+{
+  "pickupRank": 42,
+  "domain": "ChromeExtension",
+  "ideaNo": 7,
+  "idea": "画像・素材・alt検品カート",
+  "repository": "image-asset-alt-qa-cart",
+  "publish": "Chrome Web Store",
+  "createdIdeaFolder": "D:/AI/ChromeExtension/created_idea_007_image-asset-alt-qa-cart",
+  "zipFile": "D:/AI/ChromeExtension/created_idea_007_image-asset-alt-qa-cart/idea_007_image-asset-alt-qa-cart.zip",
+  "zipDocumentsChecked": [
+    "metadata.json",
+    "README.md",
+    "01_REQUIREMENTS.md",
+    "02_SPECIFICATION.md",
+    "03_DESIGN.md",
+    "04_IMPLEMENTATION_PLAN.md",
+    "05_TEST_PLAN.md",
+    "06_RELEASE_CHECKLIST.md"
+  ],
+  "zipMetadataRepositoryName": "image-asset-alt-qa-cart",
+  "zipMetadataMatchedRepository": true,
+  "existingRepositoryReadmeAtStart": "存在しない",
+  "domainDocsRead": [
+    "D:/AI/IDEAS/ChromeExtension/Design.md",
+    "D:/AI/IDEAS/ChromeExtension/Architecture.md",
+    "D:/AI/IDEAS/ChromeExtension/AGENTS.md",
+    "D:/AI/IDEAS/ChromeExtension/SKILL.md",
+    "D:/AI/ChromeExtension/AGENTS.md",
+    "D:/AI/ChromeExtension/SKILL.md"
+  ],
+  "hostInference": null
+}
