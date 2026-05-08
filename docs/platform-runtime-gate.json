@@ -1,0 +1,11 @@
+{
+  "product": "image-asset-alt-qa-cart",
+  "title": "画像・素材・alt検品カート",
+  "domain": "ChromeExtension",
+  "ideaNo": 7,
+  "platformType": "chrome-extension",
+  "expectedPublicTarget": "Chrome Web Store",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
